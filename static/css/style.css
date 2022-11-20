@@ -1,0 +1,154 @@
+/*
+Common
+****************/
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/wallpaper1.png);
+  background-size: 100%;
+  background-repeat: inherit;
+
+}
+
+
+
+header {
+  display: flex;
+  gap: 3%;
+}
+
+h2.headers {
+  padding-left: 0;
+  color: royalblue
+ 
+ 
+}
+
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  border-left: 1px solid  rgba(12, 219,233);
+  border-right: 1px solid  rgba(12, 219,233);
+  border-radius: 10px;
+
+  
+  
+  
+
+}
+.content .main-header{
+  display: flex;
+  border-bottom: 1px solid;
+  align-items: center;
+}
+
+/*
+Post
+****************/
+
+.post_form {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+}
+.post_form input#name {
+  width: 76%;
+  margin-bottom: 10px;
+  height: 35px;
+  border: 0px;
+  background-color:rgba(3, 243, 211, 0.973);
+  border-radius: 5px;
+  padding: 3px;
+  
+  
+}
+
+input.form-control.form-control-sm {
+  background-color: rgba(121, 230, 226, 0.548);
+  border-radius: 5px;
+  border: rgba(159, 235, 227, 0.995);
+  padding: 3px;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+.post_form input#btn {
+  width: 60%;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(12, 245, 233);
+}
+
+
+.post_form textarea {
+  width: 75%;
+  height: 80px;
+  border: #08090928;
+  background-color: rgb(121, 230, 226, 0.548);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.posts ul { 
+  padding: 0;
+}
+
+.posts li {
+  position: relative;
+  display: flex ;
+  border-bottom:  1px solid  #ccc;
+  padding: 20px 40px ;
+  list-style:none;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+}
+.posts li .menu { 
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid rgb(14, 16, 16);
+  background-color: rgb(4, 235, 231);
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 3px ;
+}
+
+.posts li .menu a{
+  text-decoration: none;
+}
+
+.posts li .logo{
+  width: 50px;
+  flex-basis: 15%;
+}
+
+.posts li .logo img {
+  width:70%
+}
+
+.posts li .name_body {
+  flex-basis: 85%;
+}
+
+.posts li .name_body .name {
+  font-weight: bold;
+}
+
+.posts li .name_body .datetime{
+  color: grey;
+}
+
+@media screen and (max-width: 500px) {
+  .posts li .name_body .name{
+      font-size: 20px;
+  }
+}
+
